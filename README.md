@@ -8,7 +8,8 @@ PW has its own `expect` asseritons but only when using its builtin test runner.
 1.  before, after, beforeEach are Mocha globals that only exist when Mocha loads test files. That is why `/tests/setup.spec` should be as spec.js even though there are no tests.
 This is the standard Mocha pattern for setup files. The .spec.js extension is what tells Mocha to load it and give it access to before()/after() hooks.
 
-## How to they work together
+### How to they work together
+
 ```
 // Mocha provides the structure
 describe('Login Tests', () => {
